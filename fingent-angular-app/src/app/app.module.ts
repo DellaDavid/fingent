@@ -4,8 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { IsAuthorizedUserCanloadService } from './shared/service/is-authorized-user-canload.service';
-
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +12,7 @@ import { IsAuthorizedUserCanloadService } from './shared/service/is-authorized-u
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [IsAuthorizedUserCanloadService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
