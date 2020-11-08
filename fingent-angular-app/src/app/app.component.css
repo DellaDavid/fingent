@@ -1,0 +1,60 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+.font {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.login-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80vw;
+}
+
+.login-form__wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.login-form__data {
+  position: relative;
+}
+
+.login-form__data i {
+  position: absolute;
+  padding: 32px 12px;
+}
+
+.login-form__input {
+  padding: 37px 39px;
+  margin: 0 0 -15px 0px;
+  font-size: 18px;
+}
+
+.login-form__button {
+  text-align: right;
+  margin: 37px 0 0 0;
+}
+
+.login-form__padding {
+  padding: 11px 23px;
+}
+
+.login-form__validation {
+  color: #FF0000;
+}
+/*# sourceMappingURL=app.component.css.map */

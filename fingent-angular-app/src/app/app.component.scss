@@ -1,0 +1,60 @@
+$font17px: 18px;
+$color-red: #FF0000 ;
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+p {
+    font-size: $font17px;
+}
+
+.font {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.login-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+
+    &__wrapper {
+        position: relative;
+        height: 100vh;
+    }
+
+    &__data {
+        position: relative;
+
+        i {
+            position: absolute;
+            padding: 32px 12px;
+        }
+    }
+
+    &__input {
+        padding: 37px 39px;
+        margin: 0 0 -15px 0px;
+        font-size: $font17px;
+    }
+
+    &__button {
+        text-align: right;
+        margin: 37px 0 0 0;
+    }
+
+    &__padding {
+        padding: 11px 23px;
+    }
+    
+    &__validation {
+        color: $color-red;
+    }
+}
