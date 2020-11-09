@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user.component';
-
+import { UserlistComponent } from './userlist/userlist.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
-  declarations: [DashboardComponent, UserComponent],
+  declarations: [UserComponent, UserlistComponent, TaskComponent],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }

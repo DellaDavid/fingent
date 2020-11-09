@@ -1,0 +1,62 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userlist__wrapper">
+    <div class="user-list-details">
+      <h1>Employee Tasks <span>[{{this.taskList.length}}]</span></h1>
+        <div class="user-list__table">
+            <div class="user-list__task">
+                <div class="user-list__add">
+                    <button (click)="addtask()" 
+                            type="submit" 
+                            class="btn btn-primary font">
+                                Add New Task
+                    </button>
+                    <div *ngIf="this.addButtonclicked"
+                          class="user-list__add-task">
+                          <form [formGroup]="addtaskFormGroup" (ngSubmit)="save()">
+                            <div class="login-form__field">
+                              <div class="form-group login-form__data">
+                                <input type="text" class="form-control" 
+                                      placeholder="Add Task"
+                                      formControlName="task">
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </form>
+                    </div>
+                </div>
+                <div class="user-list__search user-list__select">
+                    <label>Filter Based On Status</label>
+                    <select (click)="statusChanged($event)">
+                        <option *ngFor="let status of taskStatuses" 
+                            [value]="status.value">
+                            {{status.label}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+          <div class="user-list__display">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Task Description</th>
+                  <th>Task Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let task of taskList">
+                  <td>{{task.title}}</td>
+                  <td>{{task.completed}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="font align-center"
+              *ngIf="this.taskList.length == 0">
+                No tasks!
+          </div>
+        </div>
+          
+    </div>
+  </div>
+  
+
+  

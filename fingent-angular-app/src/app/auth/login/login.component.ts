@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
 
   submit(){
     this.formSubmitted = true;
-    if(this.loginFormGroup.controls.email.value == 'fingent' && this.loginFormGroup.controls.password.value) this._router.navigateByUrl('/user/dashboard');
+    if(this.loginFormGroup.controls.email.value == 'fingent' && this.loginFormGroup.controls.password.value == 'fingent') this._router.navigateByUrl('/user/userlist');
   }
   
 

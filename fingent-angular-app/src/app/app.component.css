@@ -11,9 +11,46 @@ p {
   font-size: 18px;
 }
 
+table {
+  background-color: white;
+  margin: 16px 0 0 0;
+}
+
+.table > tbody > tr > td, th {
+  padding: 20px 0 20px 8px;
+  font-size: 18px;
+}
+
+.align-center {
+  text-align: center;
+}
+
 .font {
   font-weight: 600;
   font-size: 17px;
+}
+
+select {
+  padding: 12px;
+}
+
+.pagination {
+  display: inline-block;
+  width: 50%;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: beige;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
 }
 
 .login-form {
@@ -56,5 +93,51 @@ p {
 
 .login-form__validation {
   color: #FF0000;
+}
+
+.user-list__search {
+  position: relative;
+  text-align: right;
+}
+
+.user-list__select {
+  display: inline-block;
+  width: 50%;
+}
+
+.user-list__add {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+.user-list__icon {
+  position: absolute;
+  padding: 16px 10px;
+  right: 0;
+}
+
+.user-list__input {
+  padding: 13px 12px;
+  border: none;
+}
+
+.user-list__table {
+  background-color: #f7f7f7;
+  padding: 20px 10px 15px 15px;
+}
+
+.user-list__display {
+  background-color: white;
+}
+
+.user-list__view {
+  width: 100%;
+}
+
+.user-list__viewby {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
 }
 /*# sourceMappingURL=app.component.css.map */
